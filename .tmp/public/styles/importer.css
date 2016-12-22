@@ -1,0 +1,854 @@
+/**
+ * importer.less
+ *
+ * By default, new Sails projects are configured to compile this file
+ * from LESS to CSS.  Unlike CSS files, LESS files are not compiled and
+ * included automatically unless they are imported below.
+ *
+ * The LESS files imported below are compiled and included in the order
+ * they are listed.  Mixins, variables, etc. should be imported first
+ * so that they can be accessed by subsequent LESS stylesheets.
+ *
+ * (Just like the rest of the asset pipeline bundled in Sails, you can
+ * always omit, customize, or replace this behavior with SASS, SCSS,
+ * or any other Grunt tasks you like.)
+ */
+html,
+body {
+  height: 100%;
+}
+/**
+ * .disguised()
+ *
+ * Used for disguising textareas so they are not actually visible,
+ * but are still focusable using <TAB>.
+ */
+/**********************************
+* Container
+* to keep the page content aligned
+***********************************/
+/**
+ * Color Variables
+ */
+/**
+ * Gradient Mixins
+ */
+.overlord-loading-spinner {
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.bf-loading-spinner {
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner .outer {
+  overflow: hidden;
+  position: relative;
+}
+.loading-spinner .inner {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  right: -50px;
+  top: 50px;
+}
+.navigation .navbar-brand {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ED6747;
+  padding-top: 13px;
+}
+.navigation .navbar-brand img {
+  height: 28px;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+  top: -4px;
+}
+.navigation .nav-items {
+  font-size: 13px;
+}
+.navigation .navbar-right {
+  padding-right: 10px;
+}
+.navigation .navbar-right .navbar-btn .btn-text {
+  -webkit-transition: color 250ms;
+  -moz-transition: color 250ms;
+  -ms-transition: color 250ms;
+  -o-transition: color 250ms;
+}
+.navigation .navbar-right .navbar-btn .btn-text:hover {
+  color: #DAD25E;
+}
+.navigation .navbar-right .add-tutorial-btn {
+  background: transparent;
+  border: 1px solid #ED6747;
+  color: #ED6747;
+  margin-right: 5px;
+}
+.navigation .navbar-right .me {
+  position: relative;
+  padding-top: 14px;
+  padding-right: 10px;
+}
+.navigation .navbar-right .me .user-dropdown {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: color 250ms;
+  -moz-transition: color 250ms;
+  -ms-transition: color 250ms;
+  -o-transition: color 250ms;
+}
+.navigation .navbar-right .me .user-dropdown .avatar {
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+.navigation .navbar-right .me .user-dropdown .username {
+  margin-right: 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.navigation .navbar-right .me .user-dropdown .dropdown-arrow {
+  position: relative;
+  top: 1px;
+}
+.navigation .navbar-right .me .user-dropdown:hover {
+  color: #0CD577;
+}
+.navigation .navbar-right .me .user-menu-wrapper {
+  position: fixed;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  right: -150px;
+  top: -2000px;
+  -webkit-transition: top 500ms;
+  -moz-transition: top 500ms;
+  -ms-transition: top 500ms;
+  -o-transition: top 500ms;
+}
+.navigation .navbar-right .me .user-menu-wrapper .user-menu {
+  width: 150px;
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  z-index: 100;
+}
+.navigation .navbar-right .me .user-menu-wrapper .user-menu .user-menu-item {
+  cursor: pointer;
+  -webkit-transition: color 250ms;
+  -moz-transition: color 250ms;
+  -ms-transition: color 250ms;
+  -o-transition: color 250ms;
+}
+.navigation .navbar-right .me .user-menu-wrapper .user-menu .user-menu-item:hover {
+  color: #34849A;
+}
+.navigation .navbar-right .me .user-menu-wrapper .user-menu-veil {
+  position: absolute;
+  z-index: 25;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+.navigation .navbar-right .me .user-menu-wrapper.visible {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+.homepage {
+  padding-top: 50px;
+}
+.homepage .banner {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ed6750+0,d30f37+100 */
+  background: #ed6750;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #ed6750 0%, #d30f37 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #ed6750 0%, #d30f37 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #ed6750 0%, #d30f37 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed6750', endColorstr='#d30f37', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  -webkit-transition: all 350ms;
+  -moz-transition: all 350ms;
+  -ms-transition: all 350ms;
+  -o-transition: all 350ms;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.homepage .banner .search-header {
+  text-align: center;
+  color: #fff;
+}
+.homepage .banner .search-header .logo {
+  width: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.homepage .banner .search-header h1 {
+  margin-top: 10px;
+  font-size: 32px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.homepage .banner .search-header h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.homepage .banner .search-input-group {
+  border: 1px solid #000;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #000;
+}
+.homepage .banner .search-input-group .search-input {
+  box-sizing: border-box;
+  border-radius: 0px;
+  border: none;
+  position: relative;
+  left: -1px;
+}
+.homepage .banner .search-input-group .search-input:focus {
+  border: none;
+  box-shadow: none;
+}
+.homepage .banner .search-input-group .submit-btn {
+  border-radius: 0px;
+  position: relative;
+  right: -1px;
+}
+.homepage .banner.short {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.homepage .results {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.homepage .results .search-header {
+  text-transform: uppercase;
+  font-size: 22px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+.homepage .results .tutorial .tutorial-title {
+  font-size: 17px;
+  color: #34849A;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.homepage .results .tutorial .tutorial-description {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.homepage .results .tutorial .tutorial-info {
+  font-size: 12px;
+}
+.homepage .results .tutorial .tutorial-info .divider {
+  opacity: 0.7;
+}
+.homepage .results .tutorial .tutorial-info .icon {
+  margin-right: 5px;
+  color: #34849A;
+}
+.homepage .results .tutorial .tutorial-info .rating-label {
+  margin-right: 5px;
+}
+.homepage .results .tutorial .tutorial-info .rating-stars {
+  color: #ED6747;
+}
+.sign-in {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  height: auto!important;
+  min-height: 100%;
+  padding-top: 125px;
+  padding-bottom: 100px;
+  background-color: #000;
+}
+.sign-in .login-form {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 7px;
+}
+.sign-in .login-form .form-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.sign-in .login-form .form-title img {
+  width: 24px;
+  display: inline;
+  position: relative;
+  top: -12px;
+  margin-right: 10px;
+}
+.sign-in .login-form .form-title .text {
+  font-size: 26px;
+  color: #ED6747;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.sign-in .login-form input.form-control {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 1px;
+}
+.sign-in .login-form input.form-control:focus {
+  border-color: #34849A;
+  box-shadow: none;
+}
+.sign-in .login-form .submit-btn {
+  background: transparent;
+  border: 1px solid #ED6747;
+  color: #ED6747;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-transition: all 250ms;
+  -moz-transition: all 250ms;
+  -ms-transition: all 250ms;
+  -o-transition: all 250ms;
+  cursor: pointer;
+}
+.sign-in .login-form .submit-btn:hover,
+.sign-in .login-form .submit-btn:focus {
+  color: #34849A;
+  border-color: #34849A;
+  outline: none;
+}
+.sign-in .login-form .auth-form-links {
+  text-align: center;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+}
+.sign-in .login-form .auth-form-links p {
+  margin-bottom: 5px;
+}
+.sign-in .login-form .auth-form-links p:last-child {
+  margin-bottom: 0px;
+}
+.sign-in .login-form .auth-form-links p a {
+  color: #34849A;
+}
+.sign-in .login-form .auth-form-links p a:hover,
+.sign-in .login-form .auth-form-links p a:focus {
+  outline: none;
+}
+.sign-in .login-form .auth-form-links p a.sign-up-link,
+.sign-in .login-form .auth-form-links p a.sign-in-link {
+  color: #0CD577;
+  margin-left: 4px;
+}
+.sign-up {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  height: auto!important;
+  min-height: 100%;
+  padding-top: 125px;
+  padding-bottom: 100px;
+  background-color: #000;
+}
+.sign-up .sign-up-form {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 7px;
+}
+.sign-up .sign-up-form .form-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.sign-up .sign-up-form .form-title img {
+  width: 24px;
+  display: inline;
+  position: relative;
+  top: -12px;
+  margin-right: 10px;
+}
+.sign-up .sign-up-form .form-title .text {
+  font-size: 26px;
+  color: #ED6747;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.sign-up .sign-up-form input.form-control {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 1px;
+}
+.sign-up .sign-up-form input.form-control:focus {
+  border-color: #34849A;
+  box-shadow: none;
+}
+.sign-up .sign-up-form .submit-btn {
+  background: transparent;
+  border: 1px solid #ED6747;
+  color: #ED6747;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-transition: all 250ms;
+  -moz-transition: all 250ms;
+  -ms-transition: all 250ms;
+  -o-transition: all 250ms;
+  cursor: pointer;
+}
+.sign-up .sign-up-form .submit-btn:hover,
+.sign-up .sign-up-form .submit-btn:focus {
+  color: #34849A;
+  border-color: #34849A;
+  outline: none;
+}
+.sign-up .sign-up-form .auth-form-links {
+  text-align: center;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+}
+.sign-up .sign-up-form .auth-form-links p {
+  margin-bottom: 5px;
+}
+.sign-up .sign-up-form .auth-form-links p:last-child {
+  margin-bottom: 0px;
+}
+.sign-up .sign-up-form .auth-form-links p a {
+  color: #34849A;
+}
+.sign-up .sign-up-form .auth-form-links p a:hover,
+.sign-up .sign-up-form .auth-form-links p a:focus {
+  outline: none;
+}
+.sign-up .sign-up-form .auth-form-links p a.sign-up-link,
+.sign-up .sign-up-form .auth-form-links p a.sign-in-link {
+  color: #0CD577;
+  margin-left: 4px;
+}
+.browse-tutorials-list {
+  padding-top: 125px;
+  padding-bottom: 100px;
+}
+.browse-tutorials-list .tutorial-list-header {
+  text-transform: uppercase;
+  font-size: 22px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+.browse-tutorials-list .tutorial .tutorial-title {
+  font-size: 17px;
+  color: #34849A;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.browse-tutorials-list .tutorial .tutorial-description {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.browse-tutorials-list .tutorial .tutorial-info {
+  font-size: 12px;
+}
+.browse-tutorials-list .tutorial .tutorial-info .divider {
+  opacity: 0.7;
+}
+.browse-tutorials-list .tutorial .tutorial-info .icon {
+  margin-right: 5px;
+  color: #34849A;
+}
+.browse-tutorials-list .tutorial .tutorial-info .rating-label {
+  margin-right: 5px;
+}
+.browse-tutorials-list .tutorial .tutorial-info .rating-stars {
+  color: #ED6747;
+}
+.tutorial-details {
+  padding-top: 125px;
+  padding-bottom: 100px;
+}
+.tutorial-details .tutorial-title {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.tutorial-details .tutorial-description {
+  margin-bottom: 5px;
+}
+.tutorial-details .tutorial-info {
+  font-size: 12px;
+}
+.tutorial-details .tutorial-info .divider {
+  opacity: 0.7;
+}
+.tutorial-details .tutorial-info .icon {
+  margin-right: 5px;
+  color: #34849A;
+}
+.tutorial-details .tutorial-info .rating-label {
+  margin-right: 5px;
+}
+.tutorial-details .tutorial-info .rating-stars {
+  color: #ED6747;
+}
+.tutorial-details .video-list .number {
+  margin-right: 10px;
+}
+.tutorial-details .video-list .video-time {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+.panel-page {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+.video-page {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.video-page .video-title-banner {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ed6750+0,d30f37+100 */
+  background: #ed6750;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #ed6750 0%, #d30f37 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #ed6750 0%, #d30f37 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #ed6750 0%, #d30f37 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed6750', endColorstr='#d30f37', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  position: relative;
+  padding-right: 200px;
+}
+.video-page .video-title-banner .video-title {
+  text-transform: uppercase;
+  font-size: 22px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 0px;
+}
+.video-page .video-title-banner .back {
+  position: absolute;
+  width: 200px;
+  right: 20px;
+  top: 45px;
+  text-align: right;
+}
+.video-page .video-title-banner .back .back-btn {
+  color: #fff;
+  border: 1px solid #fff;
+  -webkit-transition: all 250ms;
+  -moz-transition: all 250ms;
+  -ms-transition: all 250ms;
+  -o-transition: all 250ms;
+}
+.video-page .video-title-banner .back .back-btn .icon {
+  margin-right: 10px;
+}
+.video-page .video-title-banner .back .back-btn:hover {
+  background-color: #000;
+}
+.video-page .video-column {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 450px;
+}
+.video-page .video-column .panel {
+  height: 100%;
+  background-color: #1a1a1a;
+}
+.video-page .video-column .panel .back {
+  margin-top: 5px;
+}
+.video-page .video-column .panel .back .icon {
+  color: #34849A;
+  margin-right: 5px;
+}
+.video-page .chat-column {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 450px;
+}
+.video-page .chat-column .panel {
+  height: 450px;
+  padding-top: 43px;
+  padding-bottom: 51px;
+  position: relative;
+}
+.video-page .chat-column .panel .panel-heading {
+  height: 43px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.video-page .chat-column .panel .panel-body {
+  height: 100%;
+  overflow: auto;
+}
+.video-page .chat-column .panel .panel-footer {
+  height: 71px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.video-page .chat-column .panel .chat-window .chat {
+  list-style: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  padding-left: 35px;
+  padding-right: 0px;
+  padding-bottom: 16px;
+}
+.video-page .chat-column .panel .chat-window .chat .chat-avatar {
+  width: 27px;
+  height: 27px;
+  border-radius: 4px;
+  position: absolute;
+  left: 0px;
+  top: 4px;
+}
+.video-page .chat-column .panel .chat-window .chat .header .username {
+  font-size: 15px;
+  line-height: 16px;
+  vertical-align: top;
+  font-weight: 700;
+}
+.video-page .chat-column .panel .chat-window .chat .header small {
+  font-size: 11px;
+  line-height: 16px;
+  vertical-align: top;
+  position: relative;
+  color: #34849A;
+}
+.video-page .chat-column .panel .chat-window .chat .message {
+  font-size: 14px;
+  vertical-align: top;
+  line-height: 16px;
+}
+.profile {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.profile .profile-stats {
+  background-color: #3c3c3c;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.profile .profile-stats .profile-item {
+  -webkit-transition: all 250ms;
+  -moz-transition: all 250ms;
+  -ms-transition: all 250ms;
+  -o-transition: all 250ms;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+.profile .profile-stats .profile-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.profile .profile-stats .profile-item .badge {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+}
+.profile .profile-stats .avatar-container {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.profile .profile-stats .avatar-container .avatar-img {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #000;
+}
+.profile .tutorials .tutorial-list .list-group-header {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ed6750+0,d30f37+100 */
+  background: #ed6750;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #ed6750 0%, #d30f37 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #ed6750 0%, #d30f37 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #ed6750 0%, #d30f37 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed6750', endColorstr='#d30f37', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  border: 1px solid #3c3c3c;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.profile .tutorials .tutorial-list .list-group-header h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.profile .tutorials .tutorial-list .tutorial {
+  border: 1px solid #7c7c7c;
+}
+.profile .tutorials .tutorial-list .tutorial .tutorial-title {
+  font-size: 17px;
+  color: #34849A;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.profile .tutorials .tutorial-list .tutorial .tutorial-description {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.profile .tutorials .tutorial-list .tutorial .tutorial-info {
+  font-size: 12px;
+}
+.profile .tutorials .tutorial-list .tutorial .tutorial-info .divider {
+  opacity: 0.7;
+}
+.profile .tutorials .tutorial-list .tutorial .tutorial-info .icon {
+  margin-right: 5px;
+  color: #34849A;
+}
+.profile .tutorials .tutorial-list .tutorial .tutorial-info .rating-label {
+  margin-right: 5px;
+}
+.profile .tutorials .tutorial-list .tutorial .tutorial-info .rating-stars {
+  color: #ED6747;
+}
+.profile-edit-separation {
+  margin-bottom: 10px;
+}
+.profile-followers .avatar {
+  width: 100px;
+  margin: 30px auto 0px auto;
+}
+.profile-followers .avatar-image {
+  width: width: 200px;
+  margin: 30px auto 0px auto;
+  display: block;
+}

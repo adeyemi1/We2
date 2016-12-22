@@ -1,0 +1,1 @@
+Sails and angular application
